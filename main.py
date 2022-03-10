@@ -66,10 +66,7 @@ class CustomEnv(gym.Env):
             # need to drop first data
             while True:
                 data = arduino.readline().strip()
-
                 if data:
-                    data = data.decode()
-                    print("drop", data)
                     break
 
             # timestamp = []
